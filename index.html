@@ -3,22 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Stay Lanka</title>
+    <title>Stay Lanka - Book Your Villa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to Stay Lanka</h1>
-        <p>Your perfect getaway in Sri Lanka</p>
+        <div class="container">
+            <h1>Stay Lanka Villas</h1>
+            <p>Your perfect getaway by the beach in Sri Lanka.</p>
+        </div>
     </header>
 
-    <section>
-        <h2>About Us</h2>
-        <p>Stay Lanka offers a serene, beachside escape with luxury villas.</p>
+    <!-- Photo Gallery Section -->
+    <section id="gallery">
+        <h2>Explore Our Villas</h2>
+        <div class="gallery-container">
+            <img src="images/villa1.jpg" alt="Villa 1">
+            <img src="images/villa2.jpg" alt="Villa 2">
+            <img src="images/villa3.jpg" alt="Villa 3">
+            <img src="images/villa4.jpg" alt="Villa 4">
+            <!-- Add more images here -->
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Stay Lanka. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <!-- Booking Form Section -->
+    <section id="booking-form">
+        <h2>Book Your Stay</h2>
+        <form action="submit-booking.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label
