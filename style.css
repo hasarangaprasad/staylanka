@@ -1,3 +1,18 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+
 /* Header styles */
 header {
     background-image: url('images/header-bg.jpg');
@@ -40,4 +55,154 @@ header::before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4); /* Darken the background for better readability */
     z-index: -1;
+}
+
+/* Description Section styles */
+#description {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: -60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.description-box {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#description p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gallery Section styles */
+#gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #3c8c8c;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section styles */
+#services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+#services li {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+/* Contact Section styles */
+#contact {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+#contact li {
+    margin-bottom: 15px;
+}
+
+#contact a {
+    color: #3c8c8c;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #1d6363;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer .container p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    #description h2, #gallery h2, #services h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
 }
