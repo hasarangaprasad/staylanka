@@ -58,6 +58,17 @@ header small {
     margin-bottom: 20px;
 }
 
+.description-box {
+    background-color: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
 #description p {
     font-size: 1.2rem;
     color: #555;
