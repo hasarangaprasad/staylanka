@@ -1,7 +1,8 @@
 /* Header styles */
 header {
-    background-image: url('images/header-bg.jpg');
+   // background-image: url('images/header-bg.jpg');
     background-size: cover;
+    background-color: black;
     background-position: center;
     color: white;
     text-align: center;
@@ -10,13 +11,13 @@ header {
 }
 
 header h1 {
-    font-size: 3.5rem;  /* Reduced font size */
+    font-size: 2rem;  /* Reduced font size */
     margin-bottom: 8px;  /* Reduced space between title and subtitle */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better text visibility */
 }
 
 header p {
-    font-size: 1.2rem;  /* Reduced font size */
+    font-size: 1rem;  /* Reduced font size */
     font-weight: 300;
     margin-bottom: 10px;  /* Reduced space under subheading */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ensure the subheading is legible */
