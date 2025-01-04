@@ -3,114 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinnamon Hills - Hikkaduwa</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cinnamon Hills - Your Dream Stay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        header {
+            background: url('images/10.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header .content {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        header a {
+            background: #ff7e5f;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.8;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about-container img {
+            float: left;
+            margin-right: 1.5rem;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: left;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container p {
+            margin: 1rem 0;
+        }
+        .contact-container a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Cinnamon Hills - Hikkaduwa</h1>
-            <p>Your perfect getaway with Cinnamon Mountains and paddy field views in the heart of nature.</p>
-            <small>Stay Lanka Hotels</small>
+        <div class="content">
+            <h1>Cinnamon Hills</h1>
+            <p>Your serene escape surrounded by cinnamon hills and paddy fields.</p>
+            <a href="#about">Explore Now</a>
+            <a href="https://wa.me/94787482771?text=What%20are%20the%20prices%3F" target="_blank">Chat with Us</a>
         </div>
     </header>
-
-    <!-- Description Section -->
-    <section id="description">
-        <div class="description-box">
-            <p>Welcome to Cinnamon Hills, located in the tranquil and green surroundings of Aluthwala - Hikkaduwa. Our villa offers breathtaking views of lush paddy fields, towering mountains, and the serene environment that surrounds us. Immerse yourself in the beauty of nature while enjoying the peace and quiet that makes this place so unique. The villa is designed to give you a comfortable and memorable stay in a place that offers the perfect balance of nature and luxury.</p>
-          </br>
-            Phone: <strong>+94 78 748 2771</strong>
-          </br>
-          <a href="https://wa.me/94787482771?text=Can%20I%20get%20information%20about%20your%20prices%3F" target="_blank">
-    <button style="background-color: #3c8c8c; color: white; padding: 15px 32px; text-align: center; font-size: 16px; border-radius: 8px; cursor: pointer;">
-        Book Your Stay
-    </button>
-            </br>
-            <a href="https://maps.app.goo.gl/izCd9tQtG7RZyfhX8" target="_blank">Google Location</a>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <img src="images/cinnamon_hills_hikkaduwa_18.jpg" alt="Cinnamon Hills">
+            <p>Welcome to Cinnamon Hills, where tranquility meets luxury. Nestled amidst breathtaking cinnamon hills and lush paddy fields, our villa offers a serene escape for those seeking relaxation and adventure. Wake up to the soothing sounds of nature, explore the vibrant landscapes, and immerse yourself in the local culture. Located just minutes away from the bustling beaches of Hikkaduwa and conveniently positioned near the highway exit, Cinnamon Hills is your gateway to unforgettable experiences in Sri Lanka.</p>
         </div>
     </section>
-
-    <!-- Photo Gallery Section -->
     <section id="gallery">
-        <h2>Explore Our Villa</h2>
-        <div class="gallery-container">
+        <h2>Gallery</h2>
+        <div class="gallery">
             <img src="images/cinnamon_hills_hikkaduwa_1.jpg" alt="Cinnamon Hills Hikkaduwa">
             <img src="images/cinnamon_hills_hikkaduwa_2.jpg" alt="Cinnamon Hills Hikkaduwa">
             <img src="images/cinnamon_hills_hikkaduwa_3.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_4.png" alt="Cinnamon Hills Hikkaduwa">
+            <img src="images/cinnamon_hills_hikkaduwa_4.jpg" alt="Cinnamon Hills Hikkaduwa">
             <img src="images/cinnamon_hills_hikkaduwa_5.jpg" alt="Cinnamon Hills Hikkaduwa">
             <img src="images/cinnamon_hills_hikkaduwa_6.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_7.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_8.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_9.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_10.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_11.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_12.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_13.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_14.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_15.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_16.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_18.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_19.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_20.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_21.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_22.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_23.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_24.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_25.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_26.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_27.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <img src="images/cinnamon_hills_hikkaduwa_28.jpg" alt="Cinnamon Hills Hikkaduwa">
-            <!-- Add more images as necessary -->
         </div>
     </section>
-
-    <!-- Services Section -->
-
-
-    <section id="description">
-        <div class="description-box">
-            <p>
-              <h2>Our Services</h2>
-                  Flat Screen TV</br>
-                  Free WiFi</br>
-                  Private Balcony</br>
-                  Washing Machine</br>
-                  Fridge</br>
-                  Hair Dryer</br>
-                  Air Conditioning</br>
-                  Hot Water</br>
-                  Rice Cooker</br>
-                  Gas Cooker</br>
-                  Cooking Equipment</br>
-                  Iron
-
-            </p>
+    
+    <div style="margin-top: 1.5rem;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3770.3269828457924!2d80.139997!3d6.185493999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTEnMDcuOCJOIDgwwrAwOCcyNC4wIkU!5e1!3m2!1sen!2slk!4v1735988761693!5m2!1sen!2slk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+            <p><strong>Email:</strong> <a href="mailto:info@staylanka.com">info@staylanka.com</a></p>
+            <p><strong>Phone:</strong> +94 77 123 4567</p>
+            <p><strong>Address:</strong> Cinnamon Hills, Near Hikkaduwa, Sri Lanka</p>
+            <p>We'd love to hear from you! Whether you have questions about our villa, want to check availability, or need help planning your trip, don't hesitate to reach out.</p>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="description-box">
-          <p>If you'd like to make a booking, feel free to contact us.</p>
-        </br> Phone: <strong>+94 78 748 2771</strong> </br>
-          <a href="https://wa.me/94787482771?text=Can%20I%20get%20information%20about%20your%20prices%3F" target="_blank">
-    <button style="background-color: #3c8c8c; color: white; padding: 15px 32px; text-align: center; font-size: 16px; border-radius: 8px; cursor: pointer;">
-        Book Your Stay
-    </button>
-          </br>
-          <a href="https://maps.app.goo.gl/izCd9tQtG7RZyfhX8" target="_blank">Google Location</a>
-        </div>
-    </section>
-
-
-    <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Cinnamon Hills. All rights reserved.</p>
-        </div>
+        <p>&copy; 2025 Cinnamon Hills. All rights reserved. Designed with ❤ by Sanuki Sihansa.</p>
     </footer>
 </body>
 </html>
